@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 45px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.navbar .logo a span {
+    color: #e3000f;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 31px 18px;
+    margin-right: 22px;
+    gap: 69px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s linear;
+
+}
+
+.navbar ul li.active a {
+    color: #e3000f;
+
+}
+
+.navbar ul li a:hover {
+    color: #e3000f;
+}
+
+.home-header {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-top: 23px;
+    padding: 0px 71px;
+}
+
+.home-header .content h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.home-header .content h2 span {
+    color: #e3000f;
+    margin-left: 6px;
+
+}
+
+.home-header .img figure {
+    width: 400px;
+    height: 500px;
+}
+
+.home-header .img figure img {
+    width: 100%;
+}
+
+/* icon content  */
+
+.creativity {
+    background: #ecebeb9a;
+    padding: 0px 143px;
+    /* margin-top: 23px; */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.creativity .col {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.creativity .col .icon {
+    margin-top: 23px;
+
+}
+
+.creativity .col .icon svg {
+    height: 45px;
+    width: 45px;
+
+}
+.creativity .content h1 {
+    font-weight: 600;
+    color: #e3000f;
+
+}
+.creativity .content h3 {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+/* this is about section */
+
+.about {
+    display: flex;
+    padding: 0px 71px;
+    gap: 65PX;
+}
+
+.about .img figure {
+    width: 400px;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.about .img figure img {
+    width: 100%;
+}
+
+.about .content {
+    margin-top: 200px;
+}
+
+.about .content h1 {
+    letter-spacing: 2px;
+    font-size: 29px;
+}
+
+.about .content h1 span {
+    color: #e3000f;
+}
+
+.about .content h3 {
+    line-height: 55px;
+    letter-spacing: 1px;
+}
+.about .content h3 span {
+    color: #e3000f;
+}
+.about .content article p {
+    line-height: 26px;
+    font-size: 15px;
+}
+
+/* this is fortfolio section  */
+
+.portfolio {
+    padding: 0px 24px;
+}
+.portfolio h3 {
+    text-align: center;
+    line-height: 20px;
+    color: #e3000f;
+}
+.portfolio h1 {
+    text-align: center;
+    line-height: 65px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.portfolio-container header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 56px;
+}
+.portfolio-container header li.active {
+    color: #e3000f;
+}
+.portfolio-container header li:hover {
+    color: #e3000f;
+    transition: transform 0.2s linear;
+    cursor: pointer;
+}
+
+.portfolio .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 41px;
+    margin-top: 75px;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio .card {
+    display: flex;
+    flex-direction: row;
+
+}
+.portfolio .card figure {
+    border-radius: 5px;
+    overflow: hidden;
+    height: 205px;
+    width: 335px;
+    display: flex;
+    flex-direction: row;
+}
+.portfolio .card figure img {
+    width: 100%;
+}
+
+/* this is contact page */
+
+.contact {
+    padding: 45px 45px
+}
+.both-content {
+    display: flex;
+}
+.contact .contact-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 174px;
+}
+.contact .contact-head .content h3 {
+    text-align: center;
+    color: #e3000f;
+    line-height: 20px;
+}
+.contact .contact-head .content h1 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: 600;
+}
+.contact .contact-head .content p {
+    text-align: center;
+    font-weight: 300;
+}
+.contact-left-content .contact {
+    display: flex;
+    flex-direction: column;
+}
+.icon-content {
+    display: flex;
+    gap: 34px;
+    padding: 12px 14px;
+}
+.icon-content li {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    list-style: none;
+}
+.icon-content li.list1 {
+    background-color: #fdd9d9b5;
+    width: 126px;
+    height: 80px;
+}
+.icon-content li.list1 svg {
+    color: #e3000f;
+}
+.icon-content li.list2 {
+    background-color: #d9f4e7
+}
+.icon-content li.list2 svg {
+    color: #e3000f;
+}
+.icon-content li.list3 {
+    background-color: #dad7d779;
+}
+.icon-content li.list3 svg {
+    color: #e3000f;
+}
+.icon-content li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon-content h1 {
+    font-weight: 500;
+    font-size: 27px;
+}
+.icon-content h3 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+/* right content part  */
+
+
+.contact-right-content {
+    /* display: flex; */
+    margin-top: 45px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.form-container .col1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.form-container .col1 input{
+    padding: 12px 34px;
+    font-size: 18px;
+    border-radius: 16px;
+    border: 2px solid rgb(165, 164, 164);
+}
+.form-container label textarea{
+    height: 140px;
+    width: 613px;
+    resize: none;
+    outline: none;
+    padding: 13px 14px;
+    font-size: 18px;
+    border-radius: 16px;
+    border: 2px solid rgb(165, 164, 164);
+}
+.btn button{
+    padding: 13px 28px;
+    color: grey;
+    border: 2px solid rgb(165, 164, 164);
+    /* border: 2px solid #e3000f; */
+    background: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+}
+.btn button:Hover{
+    color: white;
+    background-color: #e3000f;
+}
