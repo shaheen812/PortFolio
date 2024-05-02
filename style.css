@@ -413,6 +413,25 @@
     background-color: #e3000f;
 }
 
+.footer {
+    padding-top: 100px;
+}
+
+.footer-container {
+    background-color: #f3f3ff;
+    padding: 0px 45px;
+    width: 100%;
+    /* height: 200px; */
+}
+
+.footer-container h2 {
+    padding: 60px 0px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--content);
+}
+
+
 .navbar button {
     display: none;
     border: none;
@@ -426,6 +445,7 @@
     height: 25px; */
     cursor: pointer;
 }
+
 
 /* responsive code here  */
 
@@ -483,7 +503,7 @@
     }
 
     .about {
-        gap: 40PX;
+        gap: 40px;
     }
 
     .home-header .content h2 {
