@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/app.js"></script>
+</head>
+
+<body>
+    <section class="home">
+        <header>
+            <nav class="navigation">
+                <div class="logo">
+                    <a href="#">Shaheen Khan</a>
+                </div>
+                <div class="nav-links"  id="navLinks">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15" onclick="hideMenu()">
+                        <path fill="currentColor" fill-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5z" clip-rule="evenodd"/>
+                    </svg>                  
+                        <ul class="menu-links">
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="#">work</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                </div>
+            
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" onclick="showMenu()">
+                    <path fill="#9098ae" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/>
+                </svg>
+                
+                <!-- <button class="menu" onclick="openMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#9098ae" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg></button> -->
+            </nav>
+        </header>
+
+        <div class="home-container">
+            <div class="text-sec">
+                <h3> <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                            <path fill="#9098ae"
+                                d="M12 12q.825 0 1.413-.587T14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12m0 7.35q3.05-2.8 4.525-5.087T18 10.2q0-2.725-1.737-4.462T12 4T7.738 5.738T6 10.2q0 1.775 1.475 4.063T12 19.35M12 22q-4.025-3.425-6.012-6.362T4 10.2q0-3.75 2.413-5.975T12 2t5.588 2.225T20 10.2q0 2.5-1.987 5.438T12 22m0-12" />
+                        </svg>
+                    </span>Mumbai</h3>
+                <h1>Hello, I'm <br>Shaheen Khan</h1>
+                <p>As a web developer creating both web pages and websites, crafting digital experiences that are
+                    essential for businesses and individuals to establish their online presence and reach their audience
+                    effectively.I love the thrill of solving complex problems.
+                </p>
+                <div class="btn-content">
+                    <button class="btn">Get in Touch <span><svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                height="14" viewBox="0 0 24 24">
+                                <path fill="#9aa3b5"
+                                    d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z" />
+                            </svg></span></button>
+
+                    <div class="social">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                                <path fill="#9098ae"
+                                    d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
+                            </svg></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                                <circle cx="4.983" cy="5.009" r="2.188" fill="#9098ae" />
+                                <path
+                                    d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118c1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783c-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
+                                    fill="#9aa3b5" />
+                            </svg></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 1024 1024">
+                                <path fill="#9098ae"
+                                    d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9" />
+                            </svg></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                                <path fill="#9098ae"
+                                    d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" />
+                            </svg></li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-sec">
+                <figure>
+                    <img src="/img/woman.jpg" alt="image">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="blog-container">
+            <div class="upper-side">
+                <h1>Blog</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum quisquam, non deserunt quam
+                    provident ab est? Iure, perferendis voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolores, ipsam!</p>
+            </div>
+            <div class="below-side">
+                <div class="card">
+                    <figure>
+                        <img src="/img/blog1.jpg" alt="">
+                    </figure>
+                    <h2>How to change text <br> orientation with CSS</h2>
+                    <h3>Learn More
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+                                <path fill="#9aa3b5"
+                                    d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z" />
+                            </svg>
+                        </span>
+                    </h3>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="/img/blog1.jpg" alt="">
+                    </figure>
+                    <h2>How to change text <br> orientation with CSS</h2>
+                    <h3>Learn More
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+                                <path fill="#9aa3b5"
+                                    d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z" />
+                            </svg>
+                        </span>
+                    </h3>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="/img/blog1.jpg" alt="">
+                    </figure>
+                    <h2>How to change text <br> orientation with CSS</h2>
+                    <h3>Learn More
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+                                <path fill="#9aa3b5"
+                                    d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z" />
+                            </svg>
+                        </span>
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-container">
+            <div class="img-sec">
+                <figure>
+                    <img src="/img/woman.jpg" alt="image">
+                </figure>
+            </div>
+
+            <div class="text-sec">
+                <h3> <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                            <path fill="#9098ae"
+                                d="M6.4 20q-1 0-1.7-.7T4 17.6v-1.175q0-.95.688-1.763q.687-.812 1.812-1.4q1.125-.587 2.538-.925Q10.45 12 11.9 12q1.45 0 2.9.337q1.45.338 2.6.938q1.15.6 1.875 1.413Q20 15.5 20 16.45v1.15q0 1-.7 1.7t-1.7.7Zm0-2h11.2q.15 0 .275-.125Q18 17.75 18 17.6v-1.175q0-.625-1.788-1.525q-1.787-.9-4.312-.9q-2.575 0-4.237.9Q6 15.8 6 16.45v1.15q0 .15.125.275Q6.25 18 6.4 18Zm5.5-7q-1.45 0-2.475-1.025Q8.4 8.95 8.4 7.5q0-1.45 1.025-2.475Q10.45 4 11.9 4q1.475 0 2.487 1.025Q15.4 6.05 15.4 7.5q0 1.45-1.025 2.475Q13.35 11 11.9 11Zm0-2q.625 0 1.063-.438q.437-.437.437-1.062t-.437-1.062Q12.525 6 11.9 6t-1.062.438Q10.4 6.875 10.4 7.5t.438 1.062Q11.275 9 11.9 9Zm0-1.5ZM12 14Z" />
+                        </svg>
+                    </span>About</h3>
+                <h1>Shaheen Khan</h1>
+                <p>My journey in web development began with a fascination for the endless possibilities of the internet.
+                    I started by learning the basics of HTML, CSS, and JavaScript, gradually expanding my knowledge to
+                    include advanced concepts and technologies. Today, I'm proficient in front-end allowing me to tackle
+                    projects from start to finish with confidence and creativity.
+                    web development isn't just a job for me – it's a passion. I love the thrill of solving complex
+                    problems.
+                </p>
+                <div class="btn-content">
+                    <button class="btn">Download CV <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                viewBox="0 0 24 24">
+                                <path fill="#9aa3b5"
+                                    d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z" />
+                            </svg></span></button>
+
+                    <div class="social">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                                <path fill="#9098ae"
+                                    d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
+                            </svg></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                                <circle cx="4.983" cy="5.009" r="2.188" fill="#9098ae" />
+                                <path
+                                    d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118c1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783c-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
+                                    fill="#9aa3b5" />
+                            </svg></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 1024 1024">
+                                <path fill="#9098ae"
+                                    d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9" />
+                            </svg></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                                <path fill="#9098ae"
+                                    d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" />
+                            </svg></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="work-container">
+            <div class="upper-side">
+                <h1>Work</h1>
+                <p>I am working with these thing and improving myself </p>
+                <div class="tabs">
+                    <div class="button">
+                        <button class="btn" onclick="openCity(event, 'code')" id="defaultOpen">Code</button>
+                        <button class="btn" onclick="openCity(event, 'design')">Design</button>
+                        <button class="btn" onclick="openCity(event, 'canva')">Canva</button>
+                        <button class="btn" onclick="openTabs(event , 'images')">Images</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="code" class="img">
+                <div class="img-container">
+                    <figure>
+                        <img src="/img/code1.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/code2.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/code3.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/code4.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/code5.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/code6.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+
+                </div>
+            </div>
+            <div id="design" class="img">
+                <div class="img-container">
+                    <figure>
+                        <img src="/img/design1.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/design2.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/design3.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/design4.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/design5.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/design6.jpg" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+
+                </div>
+            </div>
+            <div id="canva" class="img">
+                <div class="img-container">
+                    <figure>
+                        <img src="/img/canva1.png" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/canva2.png" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/canva3.png" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/canva4.png" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/canva5.png" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+                    <figure>
+                        <img src="/img/canva6.png" alt="">
+                        <div class="overlay"></div>
+                    </figure>
+
+                </div>
+            </div>
+
+            <!-- <div id="images" class="img">
+            <div class="img-container">
+                <figure>
+                    <img src="design1.jpg" alt="">
+                    <div class="overlay"></div>
+                </figure>
+                <figure>
+                    <img src="design2.jpg" alt="">
+                    <div class="overlay"></div>
+                </figure>
+                <figure>
+                    <img src="design3.jpg" alt="">
+                    <div class="overlay"></div>
+                </figure>
+                <figure>
+                    <img src="design4.jpg" alt="">
+                    <div class="overlay"></div>
+                </figure>
+    
+            </div>
+        </div>  -->
+        </div>
+    </section>
+
+    <!-- <section class="contact">
+
+        <div class="contact-upper-content">
+            <h1>Contact Me</h3>
+            <h3>We Want To hear From You</h1>
+            <p>Get in touch with us and start your creative journey towards success. <br> Let's bring your vision
+                to life!</p>
+
+        </div>
+        <div class="contact-container">
+            <div class="right-side">
+                <div class="form">
+
+                    <form class="form-container">
+                        <div class="upper-content">
+                            <div class="logo">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </div>
+                            <h1>Contact me</h1>
+                        </div>
+                        <label class="text">
+                            Name
+                            <div class="text-input">
+                                <input type="text" class="name" id="first" placeholder="First">
+                                <input type="text" class="name" id="last" placeholder="Last">
+
+                            </div>
+                        </label>
+                        <label class="text">
+                            Email
+                            <input type="email" class="email" id="email">
+                        </label>
+                        <label class="text">
+                            Leave us few words
+                            <input type="text" class="through" id="through">
+                        </label>
+
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="left-side">
+                <div class="contact-del">
+                    <div class="icon-content">
+                        <li class="list1"><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#7c91f1"
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                                </svg>
+
+                            </a></li>
+
+                        <div class="address">
+                            <h1>Address</h1>
+                            <h3>Shop No.A-4, plot No.19, shastri nagar, govandi, Mumbai- 400043</h3>
+                        </div>
+                    </div>
+
+                    <div class="icon-content">
+                        <li class="list2"><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#7c91f1"
+                                        d="M4.615 19q-.69 0-1.152-.462T3 17.385V6.615q0-.69.463-1.152T4.615 5h14.77q.69 0 1.152.463T21 6.615v10.77q0 .69-.462 1.152T19.385 19zM12 11.96q.125 0 .234-.038t.214-.093l7.229-4.733q.142-.086.185-.235t-.016-.298q-.038-.192-.252-.278t-.413.034L12 11L4.82 6.32q-.2-.122-.405-.052t-.261.276q-.058.154-.016.313q.043.158.185.24l7.229 4.732q.106.056.214.093t.234.038" />
+                                </svg>
+
+                            </a></li>
+
+                        <div class="content">
+                            <h1>Email</h1>
+                            <h3>xyz@gmail.com</h3>
+                        </div>
+                    </div>
+
+                    <div class="icon-content">
+                        <li class="list3"><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#7c91f1"
+                                        d="M19.95 21q-3.125 0-6.187-1.35T8.2 15.8t-3.85-5.55T3 4.05V3h5.9l.925 5.025l-2.85 2.875q.55.975 1.225 1.85t1.45 1.625q.725.725 1.588 1.388T13.1 17l2.9-2.9l5 1.025V21z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <div class="content">
+                            <h1>Contact</h1>
+                            <h3>+91 2243564534</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+   <section class="portfolio">
+    <div class="portfolio-container">
+        <div class="content">
+            <h1>PortFolio</h3>
+            <p>Get in touch with us and start your creative journey towards success. <br> Let's bring your vision
+                to life!</p>
+        </div>
+        <div class="portfolio-col">
+            <div class="card">
+                <div class="content">
+                    <h2>Web Development</h1>
+                    <p>Lorem ipsum dolor Lorem ipsum dolor sit  Lorem ipsum dolor sit.amet consectetur adipisicing elit. Nostrum, totam. dfhure sit, githrer fhitereying  theid ifuutt buttiry amet consectetur adipisicing elit. Voluptatem, laboriosam here bgherityh</p>
+    
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>Canva Design</h1>
+                    <p>Lorem  jhitterew ipsum Lorem ipsum dolor Lorem, ipsum  sit amet. dolor sit, githrer fhitereying  theid ifuutt buttiry amet consectetur adipisicing elit. Voluptatem, laboriosam here bgherityh</p>
+    
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2> Java Developer</h1>
+                    <p>Lorem ipsum dolor sit, githrer fhitereying  theid ifuutt buttiry amet consectetur adipisicing elit. Voluptatem, laboriosam here bgherityh</p>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+    <section class="footer">
+        <div class="footer-container">
+            <div class="first">
+                <h1>About us</h1>
+                <p>Lorem sit amet consectetur adipisicing elit. Dolorum, nisi. Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Temporibus laboriosam incidunt.</p>
+            </div>
+
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">work</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+
+            <div class="social">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                        <path fill="#9098ae"
+                            d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                        <circle cx="4.983" cy="5.009" r="2.188" fill="#9098ae" />
+                        <path
+                            d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118c1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783c-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
+                            fill="#9aa3b5" />
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 1024 1024">
+                        <path fill="#9098ae"
+                            d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9" />
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                        <path fill="#9098ae"
+                            d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" />
+                    </svg></li>
+            </div>
+
+        </div>
+        <div class="line"></div>
+        <div class="copy-right">
+            <h1> Copyright &copy; 2024 All Rights Reserved By Shaheen Khan.</h1>
+        </div>
+    </section>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("img");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
+
+<script>
+    const navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-410px";
+    }
+</script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

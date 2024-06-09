@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/app.js"></script>
+</head>
+
+<body>
+    <section class="home">
+        <header>
+            <nav class="navigation">
+                <div class="logo">
+                    <a href="#">Shaheen Khan</a>
+                </div>
+                <ul class="nav-list" id="navLinks">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15" onclick="hideMenu()"><path fill="currentColor" fill-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5z" clip-rule="evenodd"/></svg> -->
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" onclick="showMenu()"><path fill="#9098ae" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg> -->
+                <button class="menu" onclick="openMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#9098ae" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg></button>
+            </nav>
+        </header>
+
+    </section>
+
+
+    <section class="contact">
+        <div class="contact-upper-content">
+            <h1>Contact Me</h3>
+            <h3>We Want To hear From You</h1>
+            <p>Get in touch with us and start your creative journey towards success. <br> Let's bring your vision
+                to life!</p>
+
+        </div>
+        <div class="contact-container">
+            <div class="right-side">
+                <!-- <div class="form">
+
+                    <form class="form-container">
+                        <div class="upper-content">
+                            <div class="logo">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </div>
+                            <h1>Contact me</h1>
+                        </div>
+                        <label class="text">
+                            Name
+                            <div class="text-input">
+                                <input type="text" class="name" id="first" placeholder="First">
+                                <input type="text" class="name" id="last" placeholder="Last">
+
+                            </div>
+                        </label>
+                        <label class="text">
+                            Email
+                            <input type="email" class="email" id="email">
+                        </label>
+                        <label class="text">
+                            Leave us few words
+                            <input type="text" class="through" id="through">
+                        </label>
+
+
+                    </form>
+                </div> -->
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="4" placeholder="Message" required></textarea>
+                    <button type="submit" name="Message" class="btn red-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="left-side">
+                <div class="contact-del">
+                    <div class="icon-content">
+                        <li class="list1"><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#7c91f1"
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                                </svg>
+
+                            </a></li>
+
+                        <div class="address">
+                            <h1>Address</h1>
+                            <h3>Shop No.A-4, plot No.19, shastri nagar, govandi, Mumbai- 400043</h3>
+                        </div>
+                    </div>
+
+                    <div class="icon-content">
+                        <li class="list2"><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#7c91f1"
+                                        d="M4.615 19q-.69 0-1.152-.462T3 17.385V6.615q0-.69.463-1.152T4.615 5h14.77q.69 0 1.152.463T21 6.615v10.77q0 .69-.462 1.152T19.385 19zM12 11.96q.125 0 .234-.038t.214-.093l7.229-4.733q.142-.086.185-.235t-.016-.298q-.038-.192-.252-.278t-.413.034L12 11L4.82 6.32q-.2-.122-.405-.052t-.261.276q-.058.154-.016.313q.043.158.185.24l7.229 4.732q.106.056.214.093t.234.038" />
+                                </svg>
+
+                            </a></li>
+
+                        <div class="content">
+                            <h1>Email</h1>
+                            <h3>xyz@gmail.com</h3>
+                        </div>
+                    </div>
+
+                    <div class="icon-content">
+                        <li class="list3"><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#7c91f1"
+                                        d="M19.95 21q-3.125 0-6.187-1.35T8.2 15.8t-3.85-5.55T3 4.05V3h5.9l.925 5.025l-2.85 2.875q.55.975 1.225 1.85t1.45 1.625q.725.725 1.588 1.388T13.1 17l2.9-2.9l5 1.025V21z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <div class="content">
+                            <h1>Contact</h1>
+                            <h3>+91 2243564534</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="first">
+                <h1>About us</h1>
+                <p>Lorem sit amet consectetur adipisicing elit. Dolorum, nisi. Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Temporibus laboriosam incidunt.</p>
+            </div>
+
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">work</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+
+            <div class="social">
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                        <path fill="#9098ae"
+                            d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                        <circle cx="4.983" cy="5.009" r="2.188" fill="#9098ae" />
+                        <path
+                            d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118c1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783c-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
+                            fill="#9aa3b5" />
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 1024 1024">
+                        <path fill="#9098ae"
+                            d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7M911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165M512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1m213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9" />
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24">
+                        <path fill="#9098ae"
+                            d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" />
+                    </svg></li>
+            </div>
+
+        </div>
+        <div class="line"></div>
+        <div class="copy-right">
+            <h1> Copyright &copy; 2024 All Rights Reserved By Shaheen Khan.</h1>
+        </div>
+    </section>
+
+
+
+    <!-- <script>
+        var navlinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navlinks.style.right = "0"
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px"
+        } -->
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
