@@ -346,6 +346,7 @@ ul li:hover::after{
 
 .button .btn {
     color: var(--icon-color);
+    cursor: pointer;
     font-size: 11px;
     border: none;
     padding: 12px 24px;
@@ -419,7 +420,6 @@ img {
 }
 .contact-container {
     display: flex;
-    gap: 7rem;
 }
 
 .contact-container h2 {
