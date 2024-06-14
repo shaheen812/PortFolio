@@ -1,25 +1,73 @@
 
+const navLinks = document.getElementById("navLinks");
 
-// function openMenu(){
-//     const humburger = document.querySelector('.navigation .menu');
-//     const navmenu = document.querySelector('.navigation .nav-list')
-    
-//     navmenu.classList.toggle('active');
-    
-//     if(navmenu.classList.contains('active')){
-//         humburger.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5z" clip-rule="evenodd"/></svg>`;
-//     }else{
-//         humburger.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#9098ae" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>`;
-//     }
-// }
+function showMenu() {
+    navLinks.style.right = "0";
+}
 
-    // const navLinks = document.getElementById("navLinks");
+function hideMenu() {
+    navLinks.style.right = "-230px";
+}
 
-    //     function showMenu(){
-    //         navLinks.style.right = "0";
-    //     }
 
-    //     function hideMenu(){
-    //         navLinks.style.right = "-200px";
-    //     }
+
+//    Tabs script here   //
+
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("img");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+
+
+//  Initialize Swiper  //
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    freeMode: true,
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    // breakpoints: {
+    //     976: {
+    //         slidesPerView: 3,
+    //         },
+    //             768: {
+    //                 slidesPerView: 2,
+    //             },
+    // },
+});
+
+function updateSlidesPerView() {
+    if (window.innerWidth < 550) {
+        swiper.params.slidesPerView = 1;
+    } else if (window.innerWidth < 768) {
+        swiper.params.slidesPerView = 2;
+    } else {
+        swiper.params.slidesPerView = 3;
+    }
+    swiper.update(); // Update swiper to apply changes
+}
+
+// Initial call
+updateSlidesPerView();
+
+// Listen to window resize events
+window.addEventListener('resize', updateSlidesPerView);
 
