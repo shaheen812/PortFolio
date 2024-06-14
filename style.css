@@ -1094,4 +1094,8 @@ ul {
     .contact {
         padding: 51px 26px;
     }
+    .about {
+        padding-top: 0;
+        height: 150vh;
+    }
 }
