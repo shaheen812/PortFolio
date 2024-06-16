@@ -1027,7 +1027,7 @@ ul {
     }
     .about{
         padding-top: 0;
-        height: 188vh;
+        height: 145vh;
     }
 
     .about-container {
@@ -1074,6 +1074,15 @@ ul {
     }
     .contact-container {
         flex-direction: column-reverse;
+    }
+    .work .upper-side p {
+        text-align: center;
+    }
+    .work .upper-side .button {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
    
